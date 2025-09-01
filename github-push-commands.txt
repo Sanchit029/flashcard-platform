@@ -1,0 +1,18 @@
+# Quick GitHub Push Commands
+# Copy and paste these commands after creating your GitHub repositories
+
+# BACKEND - Replace [YOUR-USERNAME] with your actual GitHub username
+cd /Users/sanchitbishnoi/Desktop/Project-7/backend
+git remote add origin https://github.com/[YOUR-USERNAME]/flashcard-platform-backend.git
+git branch -M main
+git push -u origin main
+
+# FRONTEND - Replace [YOUR-USERNAME] with your actual GitHub username  
+cd /Users/sanchitbishnoi/Desktop/Project-7/frontend
+git remote add origin https://github.com/[YOUR-USERNAME]/flashcard-platform-frontend.git
+git branch -M main
+git push -u origin main
+
+# After pushing, your repositories will be available at:
+# • Backend: https://github.com/[YOUR-USERNAME]/flashcard-platform-backend
+# • Frontend: https://github.com/[YOUR-USERNAME]/flashcard-platform-frontend
