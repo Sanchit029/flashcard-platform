@@ -58,7 +58,7 @@ A full-stack web application that transforms text content and PDF documents into
 1. **Clone the repository**
    ```bash
    git clone <repository-url>
-   cd Project-7/backend
+   cd flashcard-platform/backend
    ```
 
 2. **Install dependencies**
@@ -236,8 +236,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 For questions or support:
 - Create an issue in the repository
-- Contact: [your-email@domain.com]
 
 ---
 
-*Last updated: September 2025*
+*Last updated: October 2025*
