@@ -157,44 +157,42 @@ const Upload = () => {
       {activeTab === 'pdf' && (
         <div className="bg-white rounded-lg shadow-md p-6 mb-6">
           <h2 className="text-xl font-semibold mb-4">Upload PDF</h2>
-          <div className="border-2 border-dashed border-gray-300 rounded-lg p-8 text-center">
-            <div className="mb-4">
-              <svg className="mx-auto h-12 w-12 text-gray-400" stroke="currentColor" fill="none" viewBox="0 0 48 48">
-                <path d="M28 8H12a4 4 0 00-4 4v20m32-12v8m0 0v8a4 4 0 01-4 4H12a4 4 0 01-4-4v-4m32-4l-3.172-3.172a4 4 0 00-5.656 0L28 28M8 32l9.172-9.172a4 4 0 015.656 0L28 28m0 0l4 4m4-24h8m-4-4v8m-12 4h.02" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-              </svg>
-            </div>
-            <label htmlFor="pdf-upload" className="cursor-pointer">
-              <span className="text-lg font-medium text-gray-900">
-                {file ? file.name : 'Click to upload PDF'}
-              </span>
-              <input
-                id="pdf-upload"
-                type="file"
-                accept=".pdf"
-                onChange={handleFileChange}
-                className="hidden"
-              />
-            </label>
-            <p className="text-gray-500 mt-2">or drag and drop</p>
-            <p className="text-sm text-gray-400 mt-1">PDF files only</p>
-          </div>
-          
-          {file && (
-            <div className="mt-4 p-3 bg-gray-50 rounded-md">
-              <div className="flex items-center justify-between">
+          <div className="border-2 border-dashed border-gray-300 rounded-lg p-8 text-center hover:border-gray-400 transition-colors">
+            {!file ? (
+              <div>
+                <svg className="mx-auto h-12 w-12 text-gray-400" stroke="currentColor" fill="none" viewBox="0 0 48 48">
+                  <path d="M28 8H12a4 4 0 00-4 4v20m32-12v8m0 0v8a4 4 0 01-4 4H12a4 4 0 01-4-4v-4m32-4l-3.172-3.172a4 4 0 00-5.656 0L28 28M8 32l9.172-9.172a4 4 0 015.656 0L28 28m0 0l4 4m4-24h8m-4-4v8m-12 4h.02" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+                <div className="mt-4">
+                  <label htmlFor="file-upload" className="cursor-pointer">
+                    <span className="mt-2 block text-sm font-medium text-gray-900">
+                      Click to upload or drag and drop
+                    </span>
+                    <span className="mt-1 block text-sm text-gray-500">PDF files only</span>
+                    <input id="file-upload" name="file-upload" type="file" className="sr-only" onChange={handleFileChange} accept=".pdf" />
+                  </label>
+                </div>
+              </div>
+            ) : (
+              <div className="flex items-center justify-center space-x-2">
+                <svg className="h-8 w-8 text-red-500" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z" clipRule="evenodd" />
+                </svg>
                 <div>
-                  <p className="font-medium text-gray-900">{file.name}</p>
+                  <p className="text-sm font-medium text-gray-900">{file.name}</p>
                   <p className="text-sm text-gray-500">{(file.size / 1024 / 1024).toFixed(2)} MB</p>
                 </div>
                 <button
                   onClick={() => setFile(null)}
-                  className="text-red-600 hover:text-red-800"
+                  className="text-red-500 hover:text-red-700"
                 >
-                  Remove
+                  <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+                  </svg>
                 </button>
               </div>
-            </div>
-          )}
+            )}
+          </div>
 
           <div className="flex justify-end mt-4 space-x-3">
             <button
@@ -242,7 +240,7 @@ const Upload = () => {
               ) : (
                 <>
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2v2M7 7h10"></path>
                   </svg>
                   Create Flashcard Set
                 </>

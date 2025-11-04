@@ -1,50 +1,72 @@
 # 🎓 FlashCard Learning Platform
 
-A full-stack web application that transforms text content and PDF documents into interactive learning materials using AI-powered content processing.
+A full-stack AI-powered web application that transforms text content and PDF documents into interactive learning materials with intelligent difficulty levels, OCR support, and beautiful modern UI.
 
-![FlashCard Platform](https://img.shields.io/badge/React-18.2.0-blue) ![Node.js](https://img.shields.io/badge/Node.js-18+-green) ![MongoDB](https://img.shields.io/badge/MongoDB-6.0-brightgreen) ![JWT](https://img.shields.io/badge/JWT-Auth-orange)
+![FlashCard Platform](https://img.shields.io/badge/React-19.1.1-blue) ![Node.js](https://img.shields.io/badge/Node.js-18+-green) ![MongoDB](https://img.shields.io/badge/MongoDB-6.0-brightgreen) ![JWT](https://img.shields.io/badge/JWT-Auth-orange) ![AI](https://img.shields.io/badge/AI-Hugging%20Face-yellow)
 
-## 🌟 Features
+## ✨ What's New (v2.0)
+
+🎨 **Premium UI Redesign** - Stunning glassmorphism login/register screens with gradient backgrounds  
+🤖 **AI Difficulty Levels** - Easy, Medium, Hard, and Mixed question generation  
+📄 **OCR Fallback** - Automatic text extraction from image-based PDFs using Tesseract.js  
+⏱️ **Enhanced Quiz Tracking** - Per-question timing and comprehensive summaries  
+📊 **Progress Analytics** - Detailed mastery tracking and quiz history storage
+
+## 🌟 Core Features
+
+### 🎨 Modern Visual Design
+- **Glassmorphism UI**: Premium login/register screens with animated gradients
+- **Responsive Design**: Perfect on desktop, tablet, and mobile
+- **Smooth Animations**: Fade-in, shake, pulse effects for delightful UX
+- **Icon-Enhanced Forms**: Visual labels with password visibility toggles
+- **Gradient Buttons**: Eye-catching CTAs with hover effects
 
 ### 📤 Content Upload & Processing
 - **Text Input**: Direct text input for quick flashcard generation
 - **PDF Upload**: Extract text from PDF documents automatically
+- **OCR Support**: Fallback to Tesseract.js for image-based PDFs
 - **AI Processing**: Generate flashcards and quizzes from any content
+- **Difficulty Selection**: Choose Easy, Medium, Hard, or Mixed questions
 
 ### 🎮 Interactive Learning
 - **Flashcard Study Mode**: Beautiful flip animations with question/answer cards
-- **Quiz Mode**: Timed multiple-choice quizzes with auto-grading
-- **Progress Tracking**: Score analytics and performance feedback
+- **Quiz Mode**: Timed multiple-choice quizzes with per-question tracking
+- **Progress Tracking**: Score analytics, mastery levels, and performance feedback
+- **Edit & Regenerate**: Modify AI-generated content or regenerate with AI
+- **Quiz History**: Automatic saving of all quiz attempts with detailed metrics
 
 ### 👤 User Management
 - **Authentication**: Secure JWT-based login/registration
 - **Personal Dashboard**: Save and organize learning sets
 - **CRUD Operations**: Create, read, update, delete flashcard sets
+- **Progress Persistence**: Track your learning journey over time
 
-### 🎨 Modern UI/UX
-- **Responsive Design**: Works on desktop, tablet, and mobile
-- **Tailwind CSS**: Modern, clean interface
-- **Smooth Animations**: 3D flip cards and loading states
-- **Dark/Light Themes**: User-friendly visual design
+### 🤖 AI-Powered Intelligence
+- **Hugging Face Integration**: State-of-the-art NLP models
+- **Smart Difficulty**: Algorithmic complexity analysis for questions
+- **Multiple Models**: BART (summarization), T5 (questions), RoBERTa (answers)
+- **Fallback Systems**: Pattern-based generation when AI unavailable
 
 ## 🛠️ Technology Stack
 
 ### Frontend
-- **React.js 18** - Modern UI framework
-- **Vite** - Fast build tool and dev server
+- **React.js 19** - Modern UI framework with latest hooks
+- **Vite 7** - Lightning-fast build tool and dev server
 - **React Router** - Client-side routing
-- **Tailwind CSS** - Utility-first CSS framework
+- **Tailwind CSS 4** - Utility-first CSS framework
 - **Axios** - HTTP client for API calls
 
 ### Backend
 - **Node.js** - JavaScript runtime
-- **Express.js** - Web application framework
+- **Express.js 5** - Web application framework
 - **MongoDB** - NoSQL database
-- **Mongoose** - MongoDB object modeling
+- **Mongoose 8** - MongoDB object modeling
 - **JWT** - JSON Web Tokens for authentication
 - **bcryptjs** - Password hashing
-- **Multer** - File upload handling
+- **Multer 2** - File upload handling
 - **pdf-parse** - PDF text extraction
+- **Tesseract.js 5** - OCR for image-based PDFs
+- **Hugging Face Inference** - AI model API
 
 ## 🚀 Quick Start
 

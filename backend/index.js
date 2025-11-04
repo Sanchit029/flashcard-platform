@@ -5,6 +5,7 @@ import dotenv from 'dotenv';
 import authRoutes from './routes/auth.js';
 import aiController from './routes/aiController.js';
 import flashcardSetController from './routes/flashcardSetController.js';
+import documentRoutes from './routes/documents.js';
 
 dotenv.config();
 
@@ -17,15 +18,20 @@ app.use(cors({
   credentials: true
 }));
 
-app.use(express.json());
+
+app.use(express.json({ limit: '50mb' }));
+
+app.use(express.urlencoded({ limit: '50mb', extended: true }));
 
 app.use('/api/auth', authRoutes);
 app.use('/api/ai', aiController);
 app.use('/api/flashcard-sets', flashcardSetController);
+app.use('/api/documents', documentRoutes);
 
 mongoose.connect(process.env.MONGO_URI)
-.then(() => {
+.then(async () => {
   console.log('MongoDB connected');
+  
   app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 })
 .catch((err) => console.error('MongoDB connection error:', err));

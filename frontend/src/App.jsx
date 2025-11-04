@@ -5,9 +5,12 @@ import Login from './components/Login';
 import Register from './components/Register';
 import Dashboard from './components/Dashboard';
 import Upload from './components/Upload';
-import ApiTest from './components/ApiTest';
+import UploadEnhanced from './components/UploadEnhanced';
+import DocumentViewer from './components/DocumentViewer';
 import Quiz from './components/Quiz';
 import StudyCards from './components/StudyCards';
+import QuickRevision from './components/QuickRevision';
+import ComingSoonAnalytics from './components/ComingSoonAnalytics';
 
 function App() {
   const [token, setToken] = useState(localStorage.getItem('token'));
@@ -16,7 +19,7 @@ function App() {
     const storedToken = localStorage.getItem('token');
     if (storedToken) {
       setToken(storedToken);
-      // You could decode the token here to get user info
+      
     }
   }, []);
 
@@ -53,17 +56,17 @@ function App() {
             element={token ? (
               <div className="min-h-screen bg-gray-50">
                 <div className="container mx-auto px-4 py-8">
-                  <Upload token={token} />
+                  <UploadEnhanced token={token} />
                 </div>
               </div>
             ) : <Navigate to="/login" />} 
           />
           <Route 
-            path="/test" 
+            path="/upload-old" 
             element={token ? (
               <div className="min-h-screen bg-gray-50">
                 <div className="container mx-auto px-4 py-8">
-                  <ApiTest token={token} />
+                  <Upload token={token} />
                 </div>
               </div>
             ) : <Navigate to="/login" />} 
@@ -77,6 +80,18 @@ function App() {
             element={token ? <StudyCards /> : <Navigate to="/login" />} 
           />
           <Route 
+            path="/flashcard-sets/:id" 
+            element={token ? <QuickRevision /> : <Navigate to="/login" />} 
+          />
+          <Route 
+            path="/documents/:id" 
+            element={token ? <DocumentViewer /> : <Navigate to="/login" />} 
+          />
+          <Route 
+            path="/analytics" 
+            element={token ? <ComingSoonAnalytics /> : <Navigate to="/login" />} 
+          />
+          <Route 
             path="/" 
             element={<Navigate to={token ? "/dashboard" : "/login"} />} 
           />
@@ -87,3 +102,5 @@ function App() {
 }
 
 export default App;
+
+

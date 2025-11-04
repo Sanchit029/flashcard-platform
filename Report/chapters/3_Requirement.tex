@@ -1,0 +1,156 @@
+This chapter outlines the comprehensive requirements analysis for the StudyGenie system. The requirements have been systematically gathered through user research, stakeholder analysis, and technical feasibility studies to ensure the system meets both user needs and technical constraints.
+
+\section{Stakeholder Analysis}
+
+\subsection{Primary Stakeholders}
+\begin{itemize}
+    \item \textbf{Students:} The primary end-users who will use the system to generate and study learning materials
+    \item \textbf{Educators:} Secondary users who may use the system to create study materials for their students
+    \item \textbf{Educational Institutions:} Organizations that may adopt the system for their learning management needs
+\end{itemize}
+
+\subsection{Secondary Stakeholders}
+\begin{itemize}
+    \item \textbf{System Administrators:} Responsible for maintaining and monitoring the system
+    \item \textbf{Content Creators:} Users who provide the source materials for processing
+    \item \textbf{Technical Support:} Team responsible for user assistance and troubleshooting
+\end{itemize}
+
+\section{Functional Requirements}
+
+\subsection{User Authentication and Management}
+\textbf{FR1.1:} The system shall provide user registration functionality with email verification
+\textbf{FR1.2:} The system shall authenticate users using secure login credentials
+\textbf{FR1.3:} The system shall maintain user sessions and provide logout functionality
+\textbf{FR1.4:} The system shall allow users to manage their profile information
+
+\subsection{Content Processing and Upload}
+\textbf{FR2.1:} The system shall accept text input through a web interface
+\textbf{FR2.2:} The system shall support PDF file upload and text extraction
+\textbf{FR2.3:} The system shall validate uploaded content for format and size constraints
+\textbf{FR2.4:} The system shall provide real-time feedback during upload and processing
+
+\subsection{AI-Powered Content Generation}
+\textbf{FR3.1:} The system shall generate flashcards (question-answer pairs) from input text
+\textbf{FR3.2:} The system shall create multiple-choice questions with multiple options
+\textbf{FR3.3:} The system shall produce concise summaries highlighting key points
+\textbf{FR3.4:} The system shall ensure generated content is relevant and educational
+
+\subsection{Interactive Learning Interface}
+\textbf{FR4.1:} The system shall provide an interactive flashcard study interface with flip animations
+\textbf{FR4.2:} The system shall implement a timed quiz interface for MCQ assessments
+\textbf{FR4.3:} The system shall allow users to navigate between different study modes
+\textbf{FR4.4:} The system shall provide immediate feedback on quiz performance
+
+\subsection{Content Management}
+\textbf{FR5.1:} The system shall allow users to save generated study materials
+\textbf{FR5.2:} The system shall provide functionality to edit and update saved content
+\textbf{FR5.3:} The system shall allow users to delete unwanted study sets
+\textbf{FR5.4:} The system shall organize content in a user-friendly dashboard
+
+\subsection{Analytics and Progress Tracking}
+\textbf{FR6.1:} The system shall track user study sessions and performance
+\textbf{FR6.2:} The system shall provide basic analytics on learning progress
+\textbf{FR6.3:} The system shall display study statistics and achievements
+\textbf{FR6.4:} The system shall offer a "Coming Soon" preview for advanced analytics
+
+\section{Non-Functional Requirements}
+
+\subsection{Performance Requirements}
+\textbf{NFR1.1:} The system shall process text input and generate study materials within 30 seconds
+\textbf{NFR1.2:} The system shall support concurrent access by multiple users without performance degradation
+\textbf{NFR1.3:} The web interface shall have a response time of less than 3 seconds for user interactions
+\textbf{NFR1.4:} The system shall handle PDF files up to 10MB in size
+
+\subsection{Scalability Requirements}
+\textbf{NFR2.1:} The system architecture shall support horizontal scaling to accommodate growing user base
+\textbf{NFR2.2:} The database shall efficiently handle increasing volumes of user data and generated content
+\textbf{NFR2.3:} The AI processing pipeline shall be designed for scalable content processing
+
+\subsection{Security Requirements}
+\textbf{NFR3.1:} The system shall implement secure user authentication using JWT tokens
+\textbf{NFR3.2:} All user data shall be encrypted during transmission using HTTPS
+\textbf{NFR3.3:} User passwords shall be securely hashed and stored
+\textbf{NFR3.4:} The system shall protect against common web vulnerabilities (XSS, CSRF, SQL injection)
+
+\subsection{Usability Requirements}
+\textbf{NFR4.1:} The user interface shall be intuitive and require minimal learning curve
+\textbf{NFR4.2:} The system shall be responsive and work across desktop, tablet, and mobile devices
+\textbf{NFR4.3:} The system shall provide clear error messages and user guidance
+\textbf{NFR4.4:} The interface shall follow modern web design principles and accessibility standards
+
+\subsection{Reliability Requirements}
+\textbf{NFR5.1:} The system shall maintain 99\% uptime during normal operation
+\textbf{NFR5.2:} The system shall gracefully handle errors and provide meaningful feedback
+\textbf{NFR5.3:} The system shall implement proper error logging and monitoring
+\textbf{NFR5.4:} Data integrity shall be maintained through proper backup and recovery mechanisms
+
+\subsection{Compatibility Requirements}
+\textbf{NFR6.1:} The web application shall be compatible with major browsers (Chrome, Firefox, Safari, Edge)
+\textbf{NFR6.2:} The system shall support PDF files created by common applications
+\textbf{NFR6.3:} The system shall be deployable on cloud platforms
+
+\section{System Constraints}
+
+\subsection{Technical Constraints}
+\begin{itemize}
+    \item The system must be developed using the MERN stack (MongoDB, Express.js, React.js, Node.js)
+    \item AI processing capabilities are dependent on third-party services
+    \item Internet connectivity is required for AI processing functionality
+    \item Browser JavaScript must be enabled for full functionality
+\end{itemize}
+
+\subsection{Business Constraints}
+\begin{itemize}
+    \item Development timeline constraints for academic project completion
+    \item Limited budget for third-party AI service usage
+    \item Single developer team constraints
+\end{itemize}
+
+\subsection{Regulatory Constraints}
+\begin{itemize}
+    \item Compliance with data privacy regulations
+    \item Educational content accuracy standards
+    \item Intellectual property considerations for user-uploaded content
+\end{itemize}
+
+\section{Use Case Analysis}
+
+\subsection{Primary Use Cases}
+\begin{enumerate}
+    \item \textbf{User Registration and Authentication}
+    \item \textbf{Content Upload and Processing}
+    \item \textbf{Study Material Generation}
+    \item \textbf{Interactive Study Session}
+    \item \textbf{Quiz Taking and Assessment}
+    \item \textbf{Content Management}
+    \item \textbf{Progress Tracking}
+\end{enumerate}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{chapters/Use_Case_3.1_.png}
+\caption{StudyGenie Use Case Diagram}
+\label{fig:use_case_diagram}
+\end{figure}
+
+\subsection{Secondary Use Cases}
+\begin{enumerate}
+    \item \textbf{Profile Management}
+    \item \textbf{Content Sharing}
+    \item \textbf{System Administration}
+    \item \textbf{Analytics Viewing}
+\end{enumerate}
+
+\section{Requirements Validation}
+
+The requirements have been validated through:
+\begin{itemize}
+    \item Technical feasibility analysis
+    \item User story mapping
+    \item Prototype development and testing
+    \item Stakeholder review and feedback
+    \item Comparison with existing solutions
+\end{itemize}
+
+This comprehensive requirements analysis ensures that StudyGenie will meet user needs while maintaining technical feasibility and project constraints.
