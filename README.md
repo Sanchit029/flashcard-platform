@@ -1,5 +1,8 @@
 # 🎓 FlashCard Learning Platform
 
+## Live Link
+![Demo Link](https://flashcard-platform-8cgf.vercel.app/)
+
 A full-stack AI-powered web application that transforms text content and PDF documents into interactive learning materials with intelligent difficulty levels, OCR support, and beautiful modern UI.
 
 ![FlashCard Platform](https://img.shields.io/badge/React-19.1.1-blue) ![Node.js](https://img.shields.io/badge/Node.js-18+-green) ![MongoDB](https://img.shields.io/badge/MongoDB-6.0-brightgreen) ![JWT](https://img.shields.io/badge/JWT-Auth-orange) ![AI](https://img.shields.io/badge/AI-Hugging%20Face-yellow)
