@@ -238,28 +238,3 @@ Artificial Intelligence (AI) is a branch of computer science that aims to create
 3. Commit changes: `git commit -m 'Add feature'`
 4. Push to branch: `git push origin feature-name`
 5. Open a Pull Request
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-- React community for excellent documentation
-- Tailwind CSS for the utility-first approach
-- MongoDB for flexible data storage
-- PDF-parse library for document processing
-
----
-
-**Built with ❤️ for enhanced learning experiences**
-
-## 📞 Support
-
-For questions or support:
-- Create an issue in the repository
-- Contact: [your-email@domain.com]
-
----
-
-*Last updated: September 2025*
