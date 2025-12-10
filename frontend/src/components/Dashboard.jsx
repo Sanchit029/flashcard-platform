@@ -29,7 +29,7 @@ const Dashboard = ({ token }) => {
 
         // Fetch both flashcard sets and documents
         const [flashcardsResponse, documentsResponse] = await Promise.all([
-          axios.get('http://localhost:5003/api/flashcard-sets', {
+          axios.get(`${import.meta.env.VITE_API_BASE_URL}/api/flashcard-sets`, {
             headers: { Authorization: `Bearer ${token}` }
           }),
           documentAPI.getAll()
@@ -73,7 +73,7 @@ const Dashboard = ({ token }) => {
         return;
       }
 
-      const response = await axios.get('http://localhost:5003/api/flashcard-sets', {
+      const response = await axios.get(`${import.meta.env.VITE_API_BASE_URL}/api/flashcard-sets`, {
         headers: { Authorization: `Bearer ${token}` }
       });
       setFlashcardSets(response.data);

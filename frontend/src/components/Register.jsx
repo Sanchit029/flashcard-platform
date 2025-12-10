@@ -35,14 +35,14 @@ const Register = ({ setToken }) => {
 
     try {
       // Register user
-      await axios.post('http://localhost:5003/api/auth/register', {
+      await axios.post(`${import.meta.env.VITE_API_BASE_URL}/api/auth/register`, {
         username: formData.username,
         email: formData.email,
         password: formData.password
       });
 
       // Auto-login after successful registration
-      const loginResponse = await axios.post('http://localhost:5003/api/auth/login', {
+      const loginResponse = await axios.post(`${import.meta.env.VITE_API_BASE_URL}/api/auth/login`, {
         email: formData.email,
         password: formData.password
       });
