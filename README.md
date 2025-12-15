@@ -1,7 +1,7 @@
 # 🎓 FlashCard Learning Platform
 
 ## Live Link
-![Demo Link](https://flashcard-platform-8cgf.vercel.app/)
+[Demo Link](https://flashcard-platform-8cgf.vercel.app/)
 
 A full-stack AI-powered web application that transforms text content and PDF documents into interactive learning materials with intelligent difficulty levels, OCR support, and beautiful modern UI.
 
