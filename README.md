@@ -1,4 +1,4 @@
-# 🎓 FlashCard Learning Platform
+#  FlashCard Learning Platform
 
 ## Live Link
 [Demo Link](https://flashcard-platform-8cgf.vercel.app/)
@@ -7,50 +7,50 @@ A full-stack AI-powered web application that transforms text content and PDF doc
 
 ![FlashCard Platform](https://img.shields.io/badge/React-19.1.1-blue) ![Node.js](https://img.shields.io/badge/Node.js-18+-green) ![MongoDB](https://img.shields.io/badge/MongoDB-6.0-brightgreen) ![JWT](https://img.shields.io/badge/JWT-Auth-orange) ![AI](https://img.shields.io/badge/AI-Hugging%20Face-yellow)
 
-## ✨ What's New (v2.0)
+##  What's New (v2.0)
 
-🎨 **Premium UI Redesign** - Stunning glassmorphism login/register screens with gradient backgrounds  
-🤖 **AI Difficulty Levels** - Easy, Medium, Hard, and Mixed question generation  
-📄 **OCR Fallback** - Automatic text extraction from image-based PDFs using Tesseract.js  
-⏱️ **Enhanced Quiz Tracking** - Per-question timing and comprehensive summaries  
-📊 **Progress Analytics** - Detailed mastery tracking and quiz history storage
+ **Premium UI Redesign** - Stunning glassmorphism login/register screens with gradient backgrounds  
+ **AI Difficulty Levels** - Easy, Medium, Hard, and Mixed question generation  
+ **OCR Fallback** - Automatic text extraction from image-based PDFs using Tesseract.js  
+ **Enhanced Quiz Tracking** - Per-question timing and comprehensive summaries  
+ **Progress Analytics** - Detailed mastery tracking and quiz history storage
 
-## 🌟 Core Features
+##  Core Features
 
-### 🎨 Modern Visual Design
+###  Modern Visual Design
 - **Glassmorphism UI**: Premium login/register screens with animated gradients
 - **Responsive Design**: Perfect on desktop, tablet, and mobile
 - **Smooth Animations**: Fade-in, shake, pulse effects for delightful UX
 - **Icon-Enhanced Forms**: Visual labels with password visibility toggles
 - **Gradient Buttons**: Eye-catching CTAs with hover effects
 
-### 📤 Content Upload & Processing
+###  Content Upload & Processing
 - **Text Input**: Direct text input for quick flashcard generation
 - **PDF Upload**: Extract text from PDF documents automatically
 - **OCR Support**: Fallback to Tesseract.js for image-based PDFs
 - **AI Processing**: Generate flashcards and quizzes from any content
 - **Difficulty Selection**: Choose Easy, Medium, Hard, or Mixed questions
 
-### 🎮 Interactive Learning
+###  Interactive Learning
 - **Flashcard Study Mode**: Beautiful flip animations with question/answer cards
 - **Quiz Mode**: Timed multiple-choice quizzes with per-question tracking
 - **Progress Tracking**: Score analytics, mastery levels, and performance feedback
 - **Edit & Regenerate**: Modify AI-generated content or regenerate with AI
 - **Quiz History**: Automatic saving of all quiz attempts with detailed metrics
 
-### 👤 User Management
+###  User Management
 - **Authentication**: Secure JWT-based login/registration
 - **Personal Dashboard**: Save and organize learning sets
 - **CRUD Operations**: Create, read, update, delete flashcard sets
 - **Progress Persistence**: Track your learning journey over time
 
-### 🤖 AI-Powered Intelligence
+###  AI-Powered Intelligence
 - **Hugging Face Integration**: State-of-the-art NLP models
 - **Smart Difficulty**: Algorithmic complexity analysis for questions
 - **Multiple Models**: BART (summarization), T5 (questions), RoBERTa (answers)
 - **Fallback Systems**: Pattern-based generation when AI unavailable
 
-## 🛠️ Technology Stack
+##  Technology Stack
 
 ### Frontend
 - **React.js 19** - Modern UI framework with latest hooks
@@ -71,7 +71,7 @@ A full-stack AI-powered web application that transforms text content and PDF doc
 - **Tesseract.js 5** - OCR for image-based PDFs
 - **Hugging Face Inference** - AI model API
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Prerequisites
 - Node.js 18+ installed
@@ -127,7 +127,7 @@ A full-stack AI-powered web application that transforms text content and PDF doc
 
    Frontend will run on `http://localhost:5173`
 
-## 📱 Application Flow
+##  Application Flow
 
 ### 1. Authentication
 - **Register**: Create new account with username, email, password
@@ -154,7 +154,7 @@ A full-stack AI-powered web application that transforms text content and PDF doc
 - **Organize**: View all saved flashcard sets and quizzes
 - **Analytics**: Track scores and learning progress
 
-## 🎯 API Endpoints
+##  API Endpoints
 
 ### Authentication
 - `POST /api/auth/register` - User registration
@@ -174,7 +174,7 @@ A full-stack AI-powered web application that transforms text content and PDF doc
 - `PUT /api/flashcard-sets/:id` - Update flashcard set
 - `DELETE /api/flashcard-sets/:id` - Delete flashcard set
 
-## 🎨 Component Architecture
+##  Component Architecture
 
 ### Core Components
 - **App.jsx** - Main application with routing
@@ -192,7 +192,7 @@ A full-stack AI-powered web application that transforms text content and PDF doc
 - **Login.jsx** - User login form
 - **Register.jsx** - User registration form
 
-## 🔧 Development Features
+##  Development Features
 
 ### Code Quality
 - **ESLint** - Code linting and formatting
@@ -205,7 +205,7 @@ A full-stack AI-powered web application that transforms text content and PDF doc
 - **Optimized Images** - Efficient asset loading
 - **Fast Build** - Vite for quick development cycles
 
-## 📊 Testing the Application
+##  Testing the Application
 
 ### Complete Workflow Test
 1. **Start both servers** (backend on :5003, frontend on :5173)
@@ -222,7 +222,7 @@ A full-stack AI-powered web application that transforms text content and PDF doc
 Artificial Intelligence (AI) is a branch of computer science that aims to create intelligent machines. Machine learning is a subset of AI that enables computers to learn without being explicitly programmed. Deep learning uses neural networks to model and understand complex patterns in data.
 ```
 
-## 🚀 Deployment
+##  Deployment
 
 ### Backend Deployment (Heroku/Railway)
 1. Set environment variables in platform
@@ -234,7 +234,7 @@ Artificial Intelligence (AI) is a branch of computer science that aims to create
 2. Deploy to platform of choice
 3. Update API endpoints for production
 
-## 🤝 Contributing
+## Contributing
 
 1. Fork the repository
 2. Create a feature branch: `git checkout -b feature-name`
